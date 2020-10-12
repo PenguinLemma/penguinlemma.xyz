@@ -1,0 +1,63 @@
+baseURL = "http://penguinlemma.xyz/"
+languageCode = "en-us"
+title = "Penguin Lemma"
+theme = "hugo-notepadium"
+copyright = "©Víctor Moreno"
+
+# enableRobotsTXT = true
+
+# disqusShortname = "Comments"
+
+# Google Analytics
+# googleAnalytics = "asdfasdfasdf"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true # enable raw HTML in Markdown
+
+[params]
+style = "light" # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"
+logo = ""
+slogan = ""
+license = ""
+fullRss = false
+
+[params.comments]
+enable = false
+
+[params.math]
+enable = true # optional: true, false.
+use = "mathjax"
+
+[params.syntax]
+use = "hljs"  # 1. prismjs 2. hljs 3. none
+#darkTheme = "one-dark"
+theme = "atom-one-dark" #"railscasts" #"solarized-light" #"atom-one-light"
+
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+[params.profile]
+  enable = true
+  #avatar = "/img/avatar.jpg"
+  # name = "Víctor Moreno"
+  bio = "Víctor Moreno"  # Using bio for the name for the time being because "name" is displayed with too big font
+  twitter = "PenguinLemma"  # https://twitter.com/XXX
+  github = "PenguinLemma"  # https://github.com/XXX
+  #docker = "XXX"  # https://hub.docker.com/u/XXX
+  #email = "thepenguinlemma@gmail.com"  # mailto:XXX@mail.com
+# custom items
+
+# [[params.nav.custom]]
+# title = "iOS"
+# url = "/tags/ios"
+
+# [[params.nav.custom]]
+# title = "Hugo"
+# url = "https://gohugo.io/"
