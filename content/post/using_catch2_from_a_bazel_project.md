@@ -36,15 +36,15 @@ http_archive(
 cc_library(
     name = "catch-main",
     srcs = ["catch-main.cpp"],
-    deps = ["@com_github_catchorg_catch2//:catch2"],  
-    testonly = True,                                   
+    deps = ["@com_github_catchorg_catch2//:catch2"],
+    testonly = True,
     visibility = ["//visibility:public"],
 )
 ```
 
 Note that you can use the field `copts` to add compilation flags.
 
-3. Add tests
+**3. Add tests**
 
 In `<mytest_dir>/my_test.cpp`:
 ```cpp
@@ -69,7 +69,7 @@ cc_test(
 )
 ```
 
-### Long story not as short
+### Long story not that short
 
 First thing we need to do is to make Catch2 available to our project. We can use Bazel\'s `http_archive` to get a particular Catch2 release by adding the following lines to our project\'s `WORKSPACE` file:
 ```
@@ -93,7 +93,7 @@ If we run `bazel build //...` in our project's root directory (workspace), Bazel
 
 We can now go ahead and create our tests. Following the recommendation in Catch2's documentation, it is best to separate the test's entry point from the test code. Whether we are fine with the `main()` Catch2 provides or we need our own, keeping it separate from our test code makes it easier to organize test in different files and executables (`cc_test`s in the case of Bazel).
 
-For example, we could have a package called `test_utils` containing a `cc_library` for that entry point. So we would need 
+For example, we could have a package called `test_utils` containing a `cc_library` for that entry point. So we would need
 
 `<workspace_root>/test_utils/catch-main.cpp`:
 ```cpp

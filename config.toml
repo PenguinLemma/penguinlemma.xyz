@@ -4,12 +4,12 @@ title = "Penguin Lemma"
 theme = "hugo-notepadium"
 copyright = "©Víctor Moreno"
 
-# enableRobotsTXT = true
+enableRobotsTXT = true
 
-# disqusShortname = "Comments"
+disqusShortname = "penguinlemma"
 
 # Google Analytics
-# googleAnalytics = "asdfasdfasdf"
+googleAnalytics = "G-YFWPTB9Z0T"
 
 [markup.highlight]
 codeFences = true
@@ -27,7 +27,7 @@ license = ""
 fullRss = false
 
 [params.comments]
-enable = false
+enable = true
 
 [params.math]
 enable = true # optional: true, false.
