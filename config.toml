@@ -8,8 +8,8 @@ enableRobotsTXT = true
 
 disqusShortname = "penguinlemma"
 
-# Google Analytics
-googleAnalytics = "G-YFWPTB9Z0T"
+# Google Analytics 4
+googleAnalyticsID = "G-LY4CB65MM1"
 
 [markup.highlight]
 codeFences = true
